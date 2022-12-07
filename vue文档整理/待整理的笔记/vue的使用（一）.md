@@ -780,7 +780,7 @@
     页面实现
 
     ```vue
-    // src/components/UserProfileView
+    // src/components/UserProfileWrite
     <template>
         <div class="card edit-field">
             <div class="card-body">
