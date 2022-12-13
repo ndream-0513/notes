@@ -1,0 +1,25 @@
+在`console`中粘贴下面的代码回车，即可跳出打印预览
+
+```javascript
+(function(){
+	'use strict';
+	var articleBox = $("div.article_content");
+	articleBox.removeAttr("style");
+	$(".hide-preCode-bt").parents(".author-pjw").show();
+	$(".hide-preCode-bt").parents("pre").removeClass("set-code-hide");
+	$(".hide-preCode-bt").parents(".hide-preCode-box").hide().remove();
+	$("#btn-readmore").parent().remove();
+	$("#side").remove();
+	$(".csdn-side-toolbar, .template-box, .blog-footer-bottom, .left-toolbox, .toolbar-inside").remove();
+	$(".comment-box, .recommend-box, .more-toolbox, .article-info-box, .column-group-item").remove();
+	$("aside, .tool-box, .recommend-nps-box, .skill-tree-box").remove();
+	$("main").css('display','content'); 
+	$("main").css('float','left'); 
+	$("#mainBox").width("100%");		
+	document.getElementsByTagName('body')[0].style.zoom=0.8;
+	window.print();
+})();
+```
+
+
+
