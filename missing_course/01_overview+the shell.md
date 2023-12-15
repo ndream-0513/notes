@@ -156,7 +156,14 @@ echo 3 | sudo tee brightness
 
 
 
+### Exercises
 
+- How does your shell know that the file is supposed to be interpreted using `sh`?
 
+  ```
+  #!/bin/sh
+  curl --head --silent https://missing.csail.mit.edu
+  ```
 
+  > 通过文件中第一行的内容决定用什么编译器进行解释，#!称作shebang，第一行称作shebang line，语法格式`#! interpreter [optional-arg]`，具体使用见Shebang (Unix) - Wikipedia](https://en.wikipedia.org/wiki/Shebang_(Unix))
 
