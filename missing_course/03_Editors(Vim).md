@@ -50,7 +50,7 @@ Vim maintains a set of open files, called “buffers”. A Vim session has a num
 
 - Basic movement: `hjkl` (left, down, up, right)
 
-- Words: `w` (next word), `b` (beginning of word), `e` (end of word)
+- Words: `w` (beginning of next word), `b` (beginning of previous word), `e` (end of next word), `ge`(end of previous word)
 
 - Lines: `0` (beginning of line), `^` (first non-blank character), `$` (end of line)
 
@@ -58,7 +58,7 @@ Vim maintains a set of open files, called “buffers”. A Vim session has a num
 
 - Scroll: `Ctrl-u` (up), `Ctrl-d` (down)
 
-- File: `gg` (beginning of file), `G` (end of file)
+- File: `gg` (beginning of file), `G` (end of file)，`ggyG`全部复制，`ggdG`全部删除
 
 - Line numbers: `:{number}<CR>` or `{number}G` (line {number})
 
@@ -67,11 +67,16 @@ Vim maintains a set of open files, called “buffers”. A Vim session has a num
 - Find: `f{character}`, `t{character}`, `F{character}`, `T{character}`
   - find/to forward/backward {character} on the current line
   - `,` / `;` for navigating matches
+  
 - Search: `/{regex}`, `n` / `N` for navigating matches
+
+  > 清除搜索之后的高亮：`:noh`、`set nohlsear
 
 #### Selection
 
 Visual modes: Visual: `v`; Visual Line: `V`; Visual Block: `Ctrl-V`，Can use movement keys to make selection.
+
+
 
 #### Edits
 
