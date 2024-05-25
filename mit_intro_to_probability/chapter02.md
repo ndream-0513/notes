@@ -29,7 +29,8 @@
 
 <img src='./img/图2.1-1 随机变量的解释.png' style="zoom: 50%;" />
 
-<img src='./img/图2.1-2 r.v.例子.png' style="zoom: 25%;" />
+<img src='./img/图2.1-2 RV例子.png' style="zoom: 25%;" />
+
 
 >在这个例子中，令 a,b,c,d 四人为样本空间，r.v..W 表示任取一人的体重，r.v..H 表示任取一人的身高，r.v..B = $\frac{W}{H^2}$ 为 r.v..W 和 r.v..H 的函数，它表示任取一人的健康水平。
 
@@ -78,7 +79,6 @@ $$
 
 #### 2.3.1 方差、矩和 d.r.v. 的函数的期望规则
 - **方差**：提供了 X 在期望周围分散程度的一个度量，
-
   $$
   var(X) = E[(X-E[X])^2] = \sum_x(x-\mu)^2p_X(x)
   $$
@@ -118,7 +118,7 @@ $$
   - $p_X(x) = \sum_yp_{X,Y}(x, y)$
   - $p_Y(y) = \sum_xp_{X,Y}(x, y)$
 
-  <img src='./img/图2.4-1 联合分布列 exap.png' style="zoom: 33%;" />
+  <img src='./img/图2.4-1 联合分布列 exap.png' style="zoom: 33%;" align="left" />
 
 #### 2.4.1 多个随机变量的函数
 设 $Z = g(X, Y)$，则有，
@@ -160,7 +160,9 @@ $$E[a_1X_1 + a_2X_2 +...+a_nX_n] = a_1E[X_1] + a_2E[X_2] + ... + a_nE[X_n]$$
 
 条件分布列的公式：
 
-$$p_{X|Y}(x|y)=P(X=x|Y=y)=\frac{P(X=x,Y=y)}{P(Y=y)}=\frac{p_{X,Y}(x,y)}{p_Y(y)}$$
+$$
+p_{X|Y}(x|y)=P(X=x|Y=y)=\frac{P(X=x,Y=y)}{P(Y=y)}=\frac{p_{X,Y}(x,y)}{p_Y(y)}
+$$
 
 由此公式可以推出计算联合分布的公式：
 $$
